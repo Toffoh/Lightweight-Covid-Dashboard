@@ -30,6 +30,8 @@ Getting started tutorial
 Ensure all dependencies are installed  
 The main app is 'Covid_dashboard' and calls other modules on requirement  
 nation_2021_10_28.csv is included for testing purposes  
+the url to view the dashboard is:  
+http://127.0.0.1:5000/index
 
 Testing
 ---------------	
