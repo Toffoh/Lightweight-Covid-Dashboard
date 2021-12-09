@@ -2,7 +2,7 @@
 import csv, json, requests, sched, time
 from datetime import datetime
 
-config_dir = "Application\\config.json"
+config_dir = "config.json"
 
 with open(config_dir) as cfg:
     jsonValues = json.load(cfg)
@@ -76,7 +76,7 @@ def covid_API_request(location='exeter',location_type='ltla'):
     #now we have the new data in the form of a json
     header = ['date','areaName','areaCode','newCasesBySpecimenDate','cumCasesBySpecimenDate','newCasesByPublishDate','cumDailyNsoDeathsByDeathDate','hospitalCases']
     #will use this to write the first row of the new csv
-    with open('Application\\csv_data\\updated_covid_csv_data_{}.csv'.format(location),'w',encoding='UTF8',newline="") as updated_csv:
+    with open('csv_data/updated_covid_csv_data_{}.csv'.format(location),'w',encoding='UTF8',newline="") as updated_csv:
         scribe = csv.DictWriter(updated_csv,fieldnames=header)
         scribe.writeheader()
         scribe.writerows(returned_data['data'])

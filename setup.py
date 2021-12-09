@@ -17,9 +17,7 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",],
-    packages=find_packages(
-         where='Application'),
-    package_dir={"":"Application"},
+    packages=['Application','Application.tests'],
     python_requires=">=3.10",
     install_requires = [
           'Flask',

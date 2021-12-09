@@ -1,7 +1,7 @@
 import requests, sched, time, json
 from datetime import datetime
 
-with open('Application\\config.json') as cfg:
+with open('config.json') as cfg:
     json_values = json.load(cfg)
     api_key = json_values['api_key']
     search_terms = json_values['search_terms']

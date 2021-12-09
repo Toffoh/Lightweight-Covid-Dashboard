@@ -9,7 +9,7 @@ from datetime import datetime
 ''' Create a custom logger so we can control what is being logged'''
 logr = logging.getLogger('__name__')
 logr.setLevel(logging.INFO)
-log_handler = logging.FileHandler('Application\\Logs\\sys.log')
+log_handler = logging.FileHandler('Logs/sys.log')
 log_handler.setLevel(logging.INFO)
 log_formatter = logging.Formatter('%(name)s - %(levelname)s - %(message)s')
 log_handler.setFormatter(log_formatter)
@@ -26,7 +26,7 @@ national_data_csv = ''
 local_data_csv = ''
 template = ''
 image_file_path = ''
-with open('Application\\config.json') as cfg:
+with open('config.json') as cfg:
     json_values = json.load(cfg)
     national_data_csv = json_values['nation_data']
     local_data_csv = json_values['local_data']
@@ -37,7 +37,7 @@ with open('Application\\config.json') as cfg:
 def run_tests():
     ''' run tests in tests folder, by default, tests are run every 3 minutes after a refresh
     hence aggregating to one per minute as the app runs for enough time'''
-    retcode = pytest.main("-W")
+    retcode = pytest.main()
 
 def data_assign(): 
     ''' assign value to the variables that will form the data for the dashboard '''

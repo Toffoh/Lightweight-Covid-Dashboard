@@ -1,4 +1,12 @@
-from .. import covid_dashboard
+import os
+import sys
+import inspect
+currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parentdir = os.path.dirname(currentdir)
+sys.path.insert(0, parentdir)
+
+import covid_dashboard
+
 ### test to see if update_data adds items to the queue
 def test_update_data():
     a,b,c,d = covid_dashboard.update_data(5)

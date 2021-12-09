@@ -28,3 +28,23 @@ __name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration':
 __name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': "Japan's COVID-19 cases defy Asia rebound, yet fears remain for winter wave - Reuters"}}
 __name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': "Japan's COVID-19 cases defy Asia rebound, yet fears remain for winter wave - Reuters"}}
 __name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': "Japan's COVID-19 cases defy Asia rebound, yet fears remain for winter wave - Reuters"}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.01, 'host': '127.0.0.1', 'params': {}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 500, 'duration': 0.04, 'host': '127.0.0.1', 'params': {}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.01, 'host': '127.0.0.1', 'params': {}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 500, 'duration': 0.06, 'host': '127.0.0.1', 'params': {}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.01, 'host': '127.0.0.1', 'params': {}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.14, 'host': '127.0.0.1', 'params': {}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.01, 'host': '127.0.0.1', 'params': {}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.23, 'host': '127.0.0.1', 'params': {}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.01, 'host': '127.0.0.1', 'params': {}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.23, 'host': '127.0.0.1', 'params': {}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.01, 'host': '127.0.0.1', 'params': {}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.21, 'host': '127.0.0.1', 'params': {}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.21, 'host': '127.0.0.1', 'params': {}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.01, 'host': '127.0.0.1', 'params': {}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.22, 'host': '127.0.0.1', 'params': {}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.01, 'host': '127.0.0.1', 'params': {}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 1.34, 'host': '127.0.0.1', 'params': {}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 1.34, 'host': '127.0.0.1', 'params': {}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.01, 'host': '127.0.0.1', 'params': {}}
