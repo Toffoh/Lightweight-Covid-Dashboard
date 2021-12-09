@@ -7,6 +7,7 @@
   "nation_data": "csv_data/updated_covid_csv_data_England.csv",
   "local_data": "csv_data/updated_covid_csv_data_exeter.csv",
   "log_dir": "Logs/sys.log",
+  "test_frequency": "180",
   "current_covid_data_structure": {
     "date": "date",
     "areaName": "areaName",

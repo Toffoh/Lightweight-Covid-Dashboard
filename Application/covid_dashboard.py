@@ -33,6 +33,7 @@ with open('config.json') as cfg:
     template = json_values['template_name']
     image_file_path = json_values['title_image']
     log_dir=json_values['log_dir']
+    test_freq=json_values['test_frequency']
 
 def run_tests():
     ''' run tests in tests folder, by default, tests are run every 3 minutes after a refresh
@@ -121,7 +122,7 @@ def start_time():
 def index():
     ''' the main server function '''
     
-    s.enter(180,1,run_tests)
+    s.enter(int(test_freq),1,run_tests)
     s.run(blocking=False)
     text_field = req.args.get('two')
     update_time = req.args.get('update')
