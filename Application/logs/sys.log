@@ -48,3 +48,29 @@ __name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration':
 __name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 1.34, 'host': '127.0.0.1', 'params': {}}
 __name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 1.34, 'host': '127.0.0.1', 'params': {}}
 __name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.01, 'host': '127.0.0.1', 'params': {}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.01, 'host': '127.0.0.1', 'params': {}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'update': '15:09', 'two': 'lunchtime news update', 'covid-data': 'covid-data', 'news': 'news'}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'update_item': 'lunchtime news update'}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'update_item': 'lunchtime news update'}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'update': '15:10', 'two': 'lunchtime news update', 'covid-data': 'covid-data', 'news': 'news'}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': "U.S. Senate Votes to Block President Biden's Vaccine Mandate in Symbolic Win for Covid-19"}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': 'INQUINTE.CA | Pressure mounting for paramedics during COVID-19 - inquinte.ca'}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': 'Doctors weigh COVID-19 impact on children as vaccine drives ramp up - Reuters'}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': 'FTSE 100 opens with slim gains as new COVID-19 curbs worry investors - Reuters'}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': "Only 6% of S.Africa's intensive care beds occupied by COVID-19 patients - WHO official - Reuters"}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': 'China reports 83 new COVID-19 cases on Dec 8 vs 74 a day earlier - Reuters'}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': "Japan's COVID-19 cases defy Asia rebound, yet fears remain for winter wave - Reuters"}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': "WHO exec: donated COVID-19 vaccines with short shelf life 'major problem' - Reuters"}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': 'WHO: wealthy countries may hoard COVID-19 shots again to fight new variant - Reuters'}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': 'TSX futures down as crude weakens on COVID-19 curbs - Reuters'}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': 'Mexico posts 289 more COVID-19 deaths, bringing toll to 295893 - Reuters'}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': 'Austria to announce details of planned COVID-19 vaccine mandate - Reuters'}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': 'N.W.T. reports 1 new COVID-19 case, this time in Hay River - CBC.ca'}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': 'Case of Omicron COVID-19 variant confirmed in Kingston area - CTV News Ottawa'}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': 'COVID-19: Alberta reports six new cases of Omicron variant - Edmonton Journal'}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': "Peel Public Health investigating after 21 COVID-19 cases found at Mississauga elementary school - CP24 Toronto's Breaking News"}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': 'Kentucky Congressman Guthrie tests positive for COVID-19'}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': 'Tucker Carlson Has A Misogynistic New Take On What COVID-19 Does To People'}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': 'A tale of two New Yorks: COVID-19 hospitalization rate surging upstate'}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 200, 'duration': 0.0, 'host': '127.0.0.1', 'params': {'notif': 'Covid-19: Omikron-Infektionen nun in elf afrikanische Staaten'}}
+__name__ - INFO - {'method': 'GET', 'path': '/index', 'status': 500, 'duration': 0.53, 'host': '127.0.0.1', 'params': {'update': '', 'two': 'l'}}

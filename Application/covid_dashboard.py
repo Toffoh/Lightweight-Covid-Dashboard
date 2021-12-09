@@ -54,6 +54,7 @@ def update_articles(update_interval: int) -> list:
     ''' update news articles list and then add them to the dashboard, as long as they are not excluded --- args = time in seconds till news should update'''
     news_data = update_news(update_interval)
     news.clear()
+    
     for article in news_data['articles']:
         if article['title'] not in removed_articles:
             news.append(article)
@@ -67,6 +68,7 @@ def update_data(interval: int,cancel='no'):
     event1 = s.enter(interval,1,schedule_covid_updates,argument=(0,'national','England','Nation'))
     event2 = s.enter(interval,2,schedule_covid_updates,argument=(0,'local'))#interval for schedule_covid_updates is 0 as the interval is already defined in s
     event3 = s.enter(interval,3,data_assign)
+    
     if cancel != 'no':
         list(map(s.cancel, s.queue))
     q = s.queue
@@ -118,11 +120,13 @@ def start_time():
 
 def index():
     ''' the main server function '''
+    
     s.enter(180,1,run_tests)
     s.run(blocking=False)
     text_field = req.args.get('two')
     update_time = req.args.get('update')
     time_to_update = 0
+    
     if update_time: # hh:mm
         t1 = time_to_sec(update_time+':00') # doesn't have seconds, can arbitrarily add 00s to the end
         t2 = time_to_sec(str(time.strftime('%H:%M:%S')))
@@ -139,6 +143,7 @@ def index():
             if time_to_update != 0:
                 update_articles(time_to_update)
                 updates_column('News',time_difference(time_to_update),text_field,time_to_update)
+
         if should_update_data: # if data update is requested, queue it, then add it to the update column 
             if time_to_update != 0:
                 update_data(time_to_update)
@@ -156,13 +161,14 @@ def index():
             updates_column('News',time_difference(time_to_update*2),text_field+ ' repeat',time_to_update*2)
         if should_update_data:
             update_data(time_to_update*2)
-
             updates_column('Statistics',time_difference(time_to_update*2),text_field+' repeat',time_to_update*2)
+
     for u in update_scheduled_times:
         if u-time.time() <= 0:
             ind = update_scheduled_times.index(u)
-            update_scheduled_times.pop(ind)
             update.pop(ind)
+            update_scheduled_times.pop(ind)
+            
     excluded_articles = req.args.get('notif') # check if any articles have been removed by user, and if so store them so we can exclude them from future updates
     if excluded_articles:
         excluded_list = [excluded_articles]
