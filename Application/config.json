@@ -1,0 +1,20 @@
+{
+  "api_key": "ddcb70049315481db027bf4799ef9192",
+  "search_terms": "Covid COVID-19 coronavirus",
+  "template_name": "index.html",
+  "title_image": "cov.png",
+  "sample_data": "Application\\csv_data\\nation_2021-10-28.csv",
+  "nation_data": "Application\\csv_data\\updated_covid_csv_data_England.csv",
+  "local_data": "Application\\csv_data\\updated_covid_csv_data_exeter.csv",
+  "log_dir": "Application\\Logs\\sys.log",
+  "current_covid_data_structure": {
+    "date": "date",
+    "areaName": "areaName",
+    "areaCode": "areaCode",
+    "newCasesBySpecimenDate": "newCasesBySpecimenDate",
+    "cumCasesBySpecimenDate": "cumCasesBySpecimenDate",
+    "newCasesByPublishDate": "newCasesByPublishDate",
+    "cumDailyNsoDeathsByDeathDate": "cumDailyNsoDeathsByDeathDate",
+    "hospitalCases": "hospitalCases"
+  }
+}
