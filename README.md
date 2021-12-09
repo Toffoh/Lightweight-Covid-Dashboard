@@ -43,7 +43,7 @@ They will automatically run to ensure the program is running correctly
 Developer Documentation
 ---------------	
 
-##**covid_data_handler**
+## **covid_data_handler**
 
 Function(parse_csv_data: str) -> list:
  '''This takes argument=string as a csv filename and reads the data and writes it to a list object'''
@@ -58,7 +58,7 @@ _API documentation: https://coronavirus.data.gov.uk/details/developers-guide_
 Function(schedule_covid_updates)
  '''schedules the covid_API_request function to run at a given interval'''
 
-##**covid_news_handling**
+## **covid_news_handling**
 
 Function(todays_date: int) -> str:
  '''returns today's date as a string with format YYYY-MM-DD'''
@@ -70,7 +70,7 @@ _API documentation: https://newsapi.org/docs_
 Function(update_news)
  '''This schedules the news_API_request function'''
 
-###**covid_dashboard**
+### **covid_dashboard**
 
 Function(Index)
  '''This tells the program to render the dashboard from the index.html template'''
