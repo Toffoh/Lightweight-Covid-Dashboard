@@ -142,12 +142,12 @@ def index():
         if should_update_news: # if news update is requested, queue it, then add it to the update column  
             if time_to_update != 0:
                 update_articles(time_to_update)
-                updates_column('News',time_difference(time_to_update),text_field,time_to_update)
+                updates_column('News',time_difference(time_to_update),text_field+' (news)',time_to_update)
 
         if should_update_data: # if data update is requested, queue it, then add it to the update column 
             if time_to_update != 0:
                 update_data(time_to_update)
-                updates_column('Statistics',time_difference(time_to_update),text_field,time_to_update)
+                updates_column('Data',time_difference(time_to_update),text_field+ ' (data)',time_to_update)
 
     if should_remove_update: # check if a scheduled update is cancelled
         for item in update:
@@ -158,17 +158,30 @@ def index():
     if should_repeat_update: # check if update should be repeated, then check what to update, then add to updates column
         if should_update_news:
             update_articles(time_to_update*2)
-            updates_column('News',time_difference(time_to_update*2),text_field+ ' repeat',time_to_update*2)
+            updates_column('News',time_difference(time_to_update*2),text_field+' (news)'+ ' repeat',time_to_update*2)
         if should_update_data:
             update_data(time_to_update*2)
-            updates_column('Statistics',time_difference(time_to_update*2),text_field+' repeat',time_to_update*2)
-
+            updates_column('Data',time_difference(time_to_update*2),text_field+' (data)'+' repeat',time_to_update*2)
+    ### below is a very convoluted workaround to a bug i experienced when multiple updates had to be removed after they had occurred
+    ### due to "pop"ing the item from the list in ascending order, the index's after that event changed, so some completed updates were staying till the next refresh
+    ### To overcome this, I made a new list and reversed it, so the list items would be "pop"ed from right to left
+    dead_updates = []
     for u in update_scheduled_times:
         if u-time.time() <= 0:
-            ind = update_scheduled_times.index(u)
-            update.pop(ind)
-            update_scheduled_times.pop(ind)
-            
+            try:
+                ind = update_scheduled_times.index(u)
+                dead_updates.insert(ind,u)
+            except IndexError:
+                continue
+    dead_updates.reverse()
+    for x in dead_updates:
+        if x-time.time() <= 0:
+            try:
+                indx = update_scheduled_times.index(x)
+                update.pop(indx)
+                update_scheduled_times.pop(indx)
+            except IndexError:
+                continue
     excluded_articles = req.args.get('notif') # check if any articles have been removed by user, and if so store them so we can exclude them from future updates
     if excluded_articles:
         excluded_list = [excluded_articles]
@@ -216,5 +229,3 @@ def log_requests(response):
 #start the program
 if __name__=='__main__':
     app.run()
-
-
