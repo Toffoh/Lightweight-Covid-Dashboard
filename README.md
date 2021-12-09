@@ -70,7 +70,7 @@ _API documentation: https://newsapi.org/docs_
 Function(update_news)
  '''This schedules the news_API_request function'''
 
-### **covid_dashboard**
+## **covid_dashboard**
 
 Function(Index)
  '''This tells the program to render the dashboard from the index.html template'''
